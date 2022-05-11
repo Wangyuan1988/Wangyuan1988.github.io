@@ -1,17 +1,9 @@
-<!DOCTYPE HTML PUBLIC "display of affection from creativejs">
+<!DOCTYPE HTML PUBLIC>
 <head>
     <meta charset="uft-8">
-    <title>Fireworks!</title>
+    <title>Fireworks</title>
     <link href="css/fireworks.css" rel="stylesheet">
     <style type="text/css">
-        #top {
-            position: relative;
-            margin-top: 0px;
-            height: 100px;
-            clear: both;
-            border: 1px solid red;
-        }
-
         #neon {
             position: fixed;
             z-index: 1;
@@ -22,6 +14,10 @@
             text-transform: uppercase;
             color: #fff;
             text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d71345, 0 0 70px #d71345, 0 0 80px #d71345, 0 0 100px #d71345, 0 0 150px #d71345;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
         }
     </style>
 </head>
@@ -29,18 +25,11 @@
     <p id="neon">
        Marry me 小阳阳 ,王远为你点燃烟花
     </p>
-    <div style="z-index: 1; width: 0px; height: 0px">
-    </div>
-
     <aside id="library">
         <img src="images/nightsky.png" id="nightsky" />
         <img src="images/big-glow.png" id="big-glow" />
         <img src="images/small-glow.png" id="small-glow" />
     </aside>
- 
-    <div style="position: absolute; z-index: 1; margin-top: 700px; margin-left: 500px;">
-        .
-    </div>
 </body>
 <script src="js/requestanimframe.js"></script>
 <script src="js/fireworks.js"></script>
